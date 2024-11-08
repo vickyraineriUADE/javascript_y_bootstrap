@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clase-input {
+    border: 1px solid #16324f;
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    transition: border-color 0.3s ease;
+}
+
+.clase-input:focus {
+    border-color: #093563;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}

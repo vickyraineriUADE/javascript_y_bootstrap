@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>JavaScript y Tailwind</title>
+</head>
+<body class="flex flex-col min-h-screen ">
+    <nav class="bg-sky-950 h-fit p-5 flex justify-between text-white">
+        <h1 class="font-bold text-xl">Estudio Jurídico</h1>
+        <ul class="flex gap-x-5">
+            <li class="hover:underline underline-offset-4"><a href="#inicio">Inicio</a></li>
+            <li class="hover:underline underline-offset-4"><a href="#servicios">Servicios</a></li>
+            <li class="hover:underline underline-offset-4"><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="mt-10 mb-8 self-center flex flex-col justify-center">
+        <h1 class="text-center text-2xl font-bold">Formulario de consulta</h1>
+        <h class="self-center mt-5">Complete el siguiente formulario para enviar su consulta a nuestro equipo de abogados</h>
+
+        <form class="flex flex-col justify-center mt-8 gap-y-8 text-sm">
+            <div class="flex flex-col">
+                <label>Nombre</label>
+                <input id="nombre" class="clase-input" placeholder="Ingrese su nombre" required/>
+            </div>
+
+            <div class="flex flex-col">
+                <label>Apellido</label>
+                <input id="apellido" class="clase-input" placeholder="Ingrese su apellido" required/>
+            </div>
+
+            <div class="flex flex-col">
+                <label>Email</label>
+                <input id="email" class="clase-input" placeholder="Ingrese su email" required/>
+            </div>
+
+            <div class="flex flex-col">
+                <label>Consulta</label>
+                <textarea id="consulta" class="clase-input" placeholder="Ingrese su consulta" required></textarea>
+            </div>
+
+            <button id="submit" class="bg-sky-800 text-lg text-white py-2 font-bold hover:bg-sky-700">Enviar</button>
+        </form>
+        
+        <h id="enviado" class="self-center mt-4 text-green-900 hidden">¡Gracias por su consulta! Nos pondremos en contacto con usted pronto</h>
+        <h id="error" class="self-center mt-4 text-red-900 hidden">Complete todos los campos para enviar la consulta</h>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-auto p-5">
+        <p>&copy; 2024 Estudio Jurídico. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
